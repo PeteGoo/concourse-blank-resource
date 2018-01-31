@@ -5,8 +5,6 @@ import os, sys
 import json
 from . import common
 
-check_url = os.environ["CHECK_URL"]
-
 
 def check_(stdin):
     config, source_config = common.parse_input(stdin)

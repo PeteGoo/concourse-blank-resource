@@ -1,0 +1,17 @@
+jobs:
+- name: get-blank-resource
+  plan:
+  - get: blank
+
+
+resources:
+- name: blank
+  type: blank-resource
+
+
+resource_types:
+
+- name: blank-resource
+  type: docker-image
+  source:
+    repository: petegoo/concourse-blank-resource
